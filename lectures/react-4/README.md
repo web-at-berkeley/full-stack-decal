@@ -1,6 +1,6 @@
-# Full-Stack DeCal React Lesson 3
+# Full-Stack DeCal React Lesson 4
 
-This repo contains the starter code for the 3rd React lesson in UC Berkeley's Introduction to Full-Stack Development DeCal.
+This repo contains the starter code for the 4th React lesson in UC Berkeley's Introduction to Full-Stack Development DeCal.
 
 # Getting Started with Create React App
 
