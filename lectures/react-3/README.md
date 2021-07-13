@@ -1,3 +1,7 @@
+# React Lesson 3
+
+This is the lesson material for the Full-Stack DeCal's React Lesson 3.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
