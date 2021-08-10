@@ -1,25 +1,48 @@
+import {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import RandomFact from './RandomFact';
+import axios from 'axios';
 
-function App() {
+export default function App() {
+  const [count, setCount] = useState(0);
+  const [fact, setFact] = useState('');
+  const [error, setError] = useState(false);
+
+  useEffect( () => {
+      axios.get(`https://uselessfacts.jsph.pl/random.json?language=en`).then((response) => {
+        setFact(response.data.text);
+      });
+  }, [count]);
+
+
+  /** fetch() version:w
+   * 
+  useEffect( () => { 
+    fetch('https://uselessfacts.jsph.pl/random.json?language=en') 
+      .then(resp => resp.json()) 
+      .then(response => setFact(response.text)) 
+      .catch(() => {
+        setError(true)
+      });
+    //how would we do this with async/await instead of promises?
+  }, [count])
+   */
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p> you clicked the button {count} times.</p>
+      <button
+        onClick= {() => setCount(count+1)}>
+        click me!
+      </button>
+      <hr/>
+      <div>
+        {error
+          ? <p>Too many requests! Wait for a few minutes and refresh</p>
+          : <RandomFact fact={fact} />
+        }
+      </div>
     </div>
   );
 }
-
-export default App;
