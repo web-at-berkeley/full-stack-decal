@@ -1,4 +1,7 @@
 # Introduction to Full-Stack Development Decal
+
+![wdblogogradient_1](https://user-images.githubusercontent.com/44333110/129112549-e74e55c1-e1ec-427b-aa15-88f4af343c07.png)
+
 Welcome to Introduction to Full-Stack Development Decal! 
 
 Here is our main github repo. It is divded into three folders:
