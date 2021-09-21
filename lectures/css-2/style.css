@@ -1,3 +1,7 @@
+/* Feel free to follow the lesson plan here:
+   https://www.notion.so/webatberkeley/CSS-2-Advanced-CSS-b10fa4a7fbd544bd83b0090dd50372fa
+*/
+
 .box-one,
 .box-two,
 .box-three {
@@ -9,7 +13,16 @@
   font-size: 20px;
 }
 
-/* Inline vs. Block */
+/*********************** Inline vs. Block ***********************/
+/* Inline: Displays an element as an 
+           inline element (like <span>). 
+           Any height and width properties will have NO effect. 
+*/
+
+/* Block: Displays an element as an 
+           block element (like <div>). 
+            It starts on a new line, and takes up the whole width. (default) 
+*/
 
 span {
   color: red;
@@ -28,7 +41,13 @@ span {
   background-color: rgb(255, 0, 0);
 }
 
-/* Positioning */
+/*********************** Positioning ***********************/
+/* Four kinds of positoning: 
+   static: the default position
+   relative: position relative to the default
+   fixed: position relative to the browser
+   absolute: position relative to the parent
+*/
 
 /* .box-two {
   position: relative;
@@ -50,7 +69,8 @@ span {
   left: 50px;
 } */
 
-/* Grid */
+/*********************** Grid ***********************/
+/* Grid can be used to layout a website (old) & create a table */
 
 /* .grid-container {
   display: grid;
@@ -68,7 +88,13 @@ span {
   text-align: center;
 } */
 
-/* Use Flexbox to build a Navbar */
+/*********************** Flexbox ***********************/
+/* The modern solution to website layout */
+/* Here are some useful attributes */
+/* flex-direction: column | row | column-reverse */
+/* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end ... */
+/* align-items: stretch | flex-start | flex-end | center | baseline */
+
 /* .navbar {
   display: flex;
   justify-content: space-between;
@@ -80,4 +106,20 @@ span {
 .nav-item {
   color: white;
   padding: 10px;
+} */
+
+/*********************** Specificity ***********************/
+/* Higher specificity will override lower specificity */
+/* When the specificities are the same, the later one will override the previous one */
+
+/* #sp {
+  color: green;
+} */
+
+/* .specificity {
+  color: red;
+}
+
+.specificity {
+  color: blue;
 } */
