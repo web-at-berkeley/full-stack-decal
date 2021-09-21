@@ -1,0 +1,83 @@
+.box-one,
+.box-two,
+.box-three {
+  display: block;
+  padding: 30px;
+  text-align: center;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Inline vs. Block */
+
+span {
+  color: red;
+  /* display: block; */
+}
+
+.box-one {
+  background-color: blue;
+}
+
+.box-two {
+  background-color: rgb(0, 0, 0);
+}
+
+.box-three {
+  background-color: rgb(255, 0, 0);
+}
+
+/* Positioning */
+
+/* .box-two {
+  position: relative;
+  left: 50px;
+} */
+
+/* .box-two {
+  position: fixed;
+  right: 0px;
+} */
+
+/* .box-container {
+  position: relative;
+  left: 100px;
+} */
+
+/* .box-two {
+  position: absolute;
+  left: 50px;
+} */
+
+/* Grid */
+
+/* .grid-container {
+  display: grid;
+  width: 30%;
+  grid-template-columns: auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+} */
+
+/* Use Flexbox to build a Navbar */
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  background-color: #333333;
+  padding: 5px;
+}
+
+.nav-item {
+  color: white;
+  padding: 10px;
+} */
